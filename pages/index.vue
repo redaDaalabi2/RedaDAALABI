@@ -11,9 +11,9 @@ export default {
   <div class="container mx-auto">
     <AppBanner />
 
-    <ProjectsGrid />
+    <!--<ProjectsGrid />
 
-    <!-- View more projects button -->
+    //View more projects button
     <div class="mt-5 sm:mt-14 flex justify-center">
       <NuxtLink
         to="/projects"
@@ -37,7 +37,7 @@ export default {
       >
         <Button title="More Projects" />
       </NuxtLink>
-    </div>
+    </div> !-->
   </div>
 </template>
 

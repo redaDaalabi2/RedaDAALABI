@@ -747,11 +747,23 @@ export const state = () => ({
   aboutMe: [
     {
       id: uuidv4(),
-      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+      bio: "I am Reda DAALABI , I'm a full stack developer, I love learning new things, especially things related to technology, and I am interested in data science & AI.",
     },
     {
       id: uuidv4(),
-      bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+      bio: "🌱 I’m currently learning everything 🤣",
+    },
+    {
+      id: uuidv4(),
+      bio: "👯 I’m looking to collaborate with other content creators",
+    },
+    {
+      id: uuidv4(),
+      bio: "🥅 2023 Goals : Contribute more to Open Source projects",
+    },
+    {
+      id: uuidv4(),
+      bio: "⚡ Fun fact : I love Music",
     },
   ],
   copyrightDate: new Date().getFullYear(),

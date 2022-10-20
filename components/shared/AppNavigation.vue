@@ -22,7 +22,7 @@ export default {
       sm:shadow-none
     "
   >
-    <NuxtLink
+    <!-- <NuxtLink
       to="/projects"
       class="
         block
@@ -36,7 +36,7 @@ export default {
       "
       aria-label="Projects"
       >Projects</NuxtLink
-    >
+    > -->
     <NuxtLink
       to="/about"
       class="
