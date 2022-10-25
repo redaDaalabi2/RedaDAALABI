@@ -77,7 +77,7 @@ export default {
       aria-label="Contact"
       >Contact</NuxtLink
     >
-    <div
+    <!-- <div
       class="
         font-general-regular
         border-t-2
@@ -106,7 +106,7 @@ export default {
       >
         Hire Me
       </button>
-    </div>
+    </div> -->
   </div>
 </template>
 
