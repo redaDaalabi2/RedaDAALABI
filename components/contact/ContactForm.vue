@@ -35,7 +35,7 @@ export default {
           mb-8
         "
       >
-        Contact Form
+        {{ $store.state.currentLanguage === 'en' ? 'Contact Form' : 'Kontaktformular' }}
       </p>
       <form
         @submit="
@@ -49,7 +49,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="name"
-            >Full Name</label
+            >{{ $store.state.currentLanguage === 'en' ? 'Full Name' : 'Vollständiger Name' }}</label
           >
           <input
             class="
@@ -71,7 +71,6 @@ export default {
             name="name"
             type="text"
             required=""
-            placeholder="Your Name"
             aria-label="Name"
           />
         </div>
@@ -79,7 +78,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="email"
-            >Email</label
+            >{{ $store.state.currentLanguage === 'en' ? 'Email' : 'E-Mail' }}</label
           >
           <input
             class="
@@ -101,7 +100,6 @@ export default {
             name="email"
             type="text"
             required=""
-            placeholder="Your Email"
             aria-label="Email"
           />
         </div>
@@ -109,7 +107,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="subject"
-            >Subject</label
+            >{{ $store.state.currentLanguage === 'en' ? 'Subject' : 'Betreff' }}</label
           >
           <input
             class="
@@ -131,7 +129,6 @@ export default {
             name="subject"
             type="text"
             required=""
-            placeholder="Subject"
             aria-label="Subject"
           />
         </div>
@@ -140,7 +137,7 @@ export default {
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="message"
-            >Message</label
+            >{{ $store.state.currentLanguage === 'en' ? 'Message' : 'Nachricht' }}</label
           >
           <textarea
             class="

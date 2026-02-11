@@ -16,12 +16,17 @@ export default {
   },
 
   computed: {
-    ...mapState(["categories"]),
+    ...mapState(["categories", "currentLanguage"]),
   },
+
   methods: {
     themeSwitcher() {
       this.$colorMode.preference =
         this.$colorMode.value == "light" ? "dark" : "light";
+    },
+    switchLanguage() {
+      const newLang = this.currentLanguage === 'en' ? 'de' : 'en';
+      this.$store.commit('setLanguage', newLang);
     },
     showModal() {
       if (this.modal) {
@@ -200,11 +205,40 @@ export default {
           </button>
         </div> -->
 
+        <!-- Language switcher -->
+        <button
+          @click="switchLanguage"
+          class="
+            sm:ml-6
+            bg-primary-light
+            dark:bg-ternary-dark
+            dark:text-ternary-light
+            hover:text-secondary-dark
+            dark:hover:text-secondary-light
+            px-2
+            py-2
+            shadow-sm
+            rounded-lg
+            cursor-pointer
+            mr-2
+          "
+          :title="currentLanguage === 'en' ? 'Switch to Deutsch' : 'Switch to English'"
+        >
+        <div style="display: flex; gap: 5px;">
+          <img
+            :src="currentLanguage === 'en' ? '/germany.svg' : '/usa.svg'"
+            class="w-5 h-5 rounded-md"
+            alt="lang flag"
+          />
+          <span class="text-sm font-general-medium">{{ currentLanguage === 'en' ? 'Deutsch' : 'English' }}</span>
+        </div>
+        </button>
+
         <!-- Theme switcher large screen -->
         <button
           @click="themeSwitcher"
           class="
-            sm:ml-6
+            sm:ml-2
             bg-primary-light
             dark:bg-ternary-dark
             px-2

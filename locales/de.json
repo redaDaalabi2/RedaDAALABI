@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "banner": {
+    "title": "Hallo, ich bin Reda DAALABI",
+    "subtitle": "Ein Full-Stack-Entwickler & Design-Enthusiast",
+    "download": "CV Herunterladen"
+  },
+  "about": {
+    "title": "Über mich"
+  },
+  "contact": {
+    "title": "Kontakt"
+  }
+}

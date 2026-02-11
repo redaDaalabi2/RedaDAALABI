@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 
 export const state = () => ({
+  currentLanguage: "en",
   projectsHeading: "Projects Portfolio",
   projectsDescription: "Some of the projects I have successfully completed",
   projects: [
@@ -744,28 +745,6 @@ export const state = () => ({
       img: "../brands/puma_gray.png",
     },
   ],
-  aboutMe: [
-    {
-      id: uuidv4(),
-      bio: "I am Reda DAALABI , I'm a full stack developer, I love learning new things, especially things related to technology, and I am interested in data science & AI.",
-    },
-    {
-      id: uuidv4(),
-      bio: "🌱 I’m currently learning everything 🤣",
-    },
-    {
-      id: uuidv4(),
-      bio: "👯 I’m looking to collaborate with other content creators",
-    },
-    {
-      id: uuidv4(),
-      bio: "🥅 2023 Goals : Contribute more to Open Source projects",
-    },
-    {
-      id: uuidv4(),
-      bio: "⚡ Fun fact : I love Music",
-    },
-  ],
   copyrightDate: new Date().getFullYear(),
   socialProfiles: [
     {
@@ -830,7 +809,9 @@ export const getters = {
 };
 
 export const mutations = {
-  // @todo
+  setLanguage(state, language) {
+    state.currentLanguage = language;
+  },
 };
 
 export const actions = {

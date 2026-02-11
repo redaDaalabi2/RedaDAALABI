@@ -1,5 +1,5 @@
 <template>
-  <button>{{ title }}</button>
+  <button>{{ $store.state.currentLanguage === 'en' ? title : 'Nachricht senden' }}</button>
 </template>
 
 <script>

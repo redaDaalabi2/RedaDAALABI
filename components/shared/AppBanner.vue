@@ -7,7 +7,11 @@ export default {
       // Todo
     };
   },
-
+  computed: {
+    currentLanguage() {
+      return this.$store.state.currentLanguage;
+    },
+  },
   mounted() {
     feather.replace();
   },
@@ -42,7 +46,7 @@ export default {
           dark:text-primary-light
         "
       >
-        Hi, I am Reda DAALABI
+        {{ $store.state.currentLanguage === 'en' ? 'Hi, I am Reda DAALABI' : 'Hallo, ich bin Reda DAALABI' }}
       </h1>
       <p
         class="
@@ -57,7 +61,7 @@ export default {
           text-gray-400
         "
       >
-        A Full-Stack Developer & Design Enthusiast
+        {{ $store.state.currentLanguage === 'en' ? 'A Full-Stack Developer & Design Enthusiast' : 'Ein Full-Stack-Entwickler & Design-Enthusiast' }}
       </p>
       <div class="flex justify-center sm:block">
         <a
@@ -87,13 +91,14 @@ export default {
             duration-500
           "
           aria-label="Download Resume"
+          style="width: 60% !important;"
         >
           <i
             data-feather="arrow-down-circle"
             class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
           ></i>
           <span class="text-sm sm:text-lg font-general-medium duration-100"
-            >Download CV</span
+            >{{ $store.state.currentLanguage === 'en' ? 'Download CV' : 'CV Herunterladen' }}</span
           ></a
         >
       </div>

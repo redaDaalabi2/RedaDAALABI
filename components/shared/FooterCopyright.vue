@@ -5,6 +5,7 @@ export default {
   data: () => {
     return {
       projectName: "All Rights Reserved",
+      projectNameDeutsch: "Alle Rechte vorbehalten",
       author: "Reda DAALABI",
     };
   },
@@ -33,9 +34,9 @@ export default {
           dark:hover:text-indigo-300
           duration-500
         "
-        >{{ projectName }}</a
+        >{{ $store.state.currentLanguage === 'en' ? projectName : projectNameDeutsch }}</a
       >
-      Developed by
+      {{ $store.state.currentLanguage === 'en' ? 'Developed by' : 'Entwickelt von' }}
       <a
         href=""
         target="__blank"

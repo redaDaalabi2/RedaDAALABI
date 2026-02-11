@@ -1,6 +1,11 @@
 <script>
+import { mapState } from "vuex";
+
 export default {
   props: ["isOpen", "showModal", "modal", "categories"],
+  computed: {
+    ...mapState(["currentLanguage"]),
+  },
 };
 </script>
 
@@ -55,7 +60,7 @@ export default {
         dark:border-secondary-dark
       "
       aria-label="About Me"
-      >About Me</NuxtLink
+      >{{ currentLanguage === 'en' ? 'About Me' : 'Über mich' }}</NuxtLink
     >
     <NuxtLink
       to="/contact"
@@ -75,7 +80,7 @@ export default {
         dark:border-secondary-dark
       "
       aria-label="Contact"
-      >Contact</NuxtLink
+      >{{ currentLanguage === 'en' ? 'Contact' : 'Kontakt' }}</NuxtLink
     >
     <!-- <div
       class="

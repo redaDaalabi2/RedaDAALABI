@@ -6,6 +6,21 @@ export default {
       // @todo
     };
   },
+  computed: {
+    contactsLocalized() {
+      const lang = this.$store.state.currentLanguage;
+
+      return this.contacts.map(c => {
+        if (c.icon === "map-pin") {
+          return {
+            ...c,
+            name: lang === "en" ? "Morocco" : "Marokko",
+          };
+        }
+        return c;
+      });
+    },
+  },
 };
 </script>
 
@@ -22,10 +37,10 @@ export default {
           mb-8
         "
       >
-        Contact details
+        {{ $store.state.currentLanguage === 'en' ? 'Contact details' : 'Kontaktdaten' }}
       </h2>
       <ul class="font-general-regular">
-        <li class="flex" v-for="contact in contacts" :key="contact.id">
+        <li class="flex" v-for="contact in contactsLocalized" :key="contact.id">
           <i
             :data-feather="contact.icon"
             class="w-5 text-gray-500 dark:text-gray-400 mr-4"

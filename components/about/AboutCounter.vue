@@ -33,10 +33,10 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >1+</span
+          >2+</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
-          >Years of experience</span
+          >{{ $store.state.currentLanguage === 'en' ? 'Years of experience' : 'Langjährige Erfahrung' }}</span
         >
       </div>
 
@@ -54,7 +54,7 @@ export default {
           >1</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
-          >Stars on GitHub</span
+          >{{ $store.state.currentLanguage === 'en' ? 'Stars on GitHub' : 'Sterne auf GitHub' }}</span
         >
       </div>
 
@@ -72,7 +72,7 @@ export default {
           >20</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
-          >Positive feedback</span
+          >{{ $store.state.currentLanguage === 'en' ? 'Positive feedback' : 'Positives Feedback' }}</span
         >
       </div>
 
@@ -87,10 +87,10 @@ export default {
             dark:text-secondary-light
             mb-2
           "
-          >15</span
+          >40</span
         >
         <span class="block text-md text-ternary-dark dark:text-ternary-light"
-          >Projects completed</span
+          >{{ $store.state.currentLanguage === 'en' ? 'Projects completed' : 'Abgeschlossene Projekte' }}</span
         >
       </div>
     </div>

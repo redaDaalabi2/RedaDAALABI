@@ -8,18 +8,18 @@ export default {
       contacts: [
         {
           id: 1,
-          name: "20 RUE OAULILI 01 QU LEBIAR SAFI",
-          icon: "map-pin",
-        },
-        {
-          id: 2,
           name: "daalabireda@gmail.com",
           icon: "mail",
         },
         {
-          id: 3,
-          name: "+212691520892",
+          id: 2,
+          name: "+212 6 91 52 08 92",
           icon: "phone",
+        },
+        {
+          id: 3,
+          name: "Morocco",
+          icon: "map-pin",
         },
       ],
     };
