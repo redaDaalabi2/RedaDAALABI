@@ -45,7 +45,36 @@ export default {
             mb-5
           "
         >
-          {{ $store.state.currentLanguage === 'en' ? 'Follow me' : 'Folgen Sie mir' }}
+          {{ $store.state.currentLanguage === 'en' ? "Get In Touch. Let's discuss your ideas !" : "Nehmen Sie Kontakt auf. Lassen Sie uns Ihre Ideen besprechen !" }}
+        </p>
+        <p
+          class="
+           font-general-medium
+           text-lg
+           sm:text-xl
+           xl:text-2xl
+           text-center
+           leading-none
+           line-height-2
+           text-gray-400
+           mb-12
+           mt-6
+           quote
+          "
+        >
+          {{ $store.state.currentLanguage === 'en' ? "If you'd like to discuss a project, collaborate, or simply connect, feel free to reach out through any of the options below " : "Wenn Sie ein Projekt besprechen, zusammenarbeiten oder einfach in Kontakt treten möchten, können Sie sich gerne über eine der untenstehenden Optionen melden " }}
+        </p>
+        <p
+          class="
+            font-general-semibold
+            text-3xl
+            sm:text-4xl
+            text-primary-dark
+            dark:text-primary-light
+            mb-8
+          "
+        >
+          {{ $store.state.currentLanguage === 'en' ? 'Follow me on' : 'Folgen Sie mir auf' }}
         </p>
         <ul class="flex gap-4 sm:gap-8">
           <a
@@ -78,4 +107,14 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.quote::before {
+  content: "“";
+  font-size: 30px;
+}
+
+.quote::after {
+  content: "”";
+  font-size: 30px;
+}
+</style>
