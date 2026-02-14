@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "nuxt",
@@ -22,6 +22,7 @@
     "@nuxtjs/color-mode": "^2.1.1",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "postcss": "^8.3.5",
+    "postcss-nesting": "^14.0.0",
     "vue-backtotop": "^1.6.1"
   }
 }
