@@ -74,8 +74,8 @@ export default {
       </p>
       <div class="flex justify-center sm:block">
         <a
-          :href="$store.state.currentLanguage === 'en' ? '/Resume_Reda_DAALABI.pptx' : '/Lebenslauf_Reda_DAALABI.pptx'"
-          :download="$store.state.currentLanguage === 'en' ? 'Resume_Reda_DAALABI.pptx' : 'lebenslauf_Reda_DAALABI.pptx'"
+          :href="$store.state.currentLanguage === 'en' ? '/Resume_Reda_DAALABI.pdf' : '/Lebenslauf_Reda_DAALABI.pdf'"
+          :download="$store.state.currentLanguage === 'en' ? 'Resume_Reda_DAALABI.pdf' : 'lebenslauf_Reda_DAALABI.pdf'"
           class="flex justify-center items-center w-36 sm:w-48 mt-4 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
           style="width: 60% !important;"
         >
